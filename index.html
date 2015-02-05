@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Caitlin's Website</title>
 	
 	<!-- Scripts to be included -->
@@ -11,55 +14,43 @@
 	<script src="js/ui-bootstrap-custom-tpls-0.12.0.js"></script>
 
     <link href="css/MainPageCss.css" rel="stylesheet" />
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/jumbotron-narrow.css" rel="stylesheet" />
 
 </head>
 <body ng-app="cheersCaitlin">
-
-    <h1>Hello World</h1>
-
-	<div ng-controller="GreetController">
-		Hello {{name}}!
+<div class="container">
+    <div class="jumbotron">
+		<input class="image" type="image" src="images/caitlin1.png">
 	</div>
+
+	<h1 class="pagetitle"> Caitlin Langfitt </h1>
+	<h4 class="subtitle"> Taking On the World </h4>
 	
-    <div id="nameList" ng-controller="ListController">
-        <div ng-repeat="person in persons">
-            {{person.id}}: {{person.name}}
-        </div>
-    </div>
-
+	<hr class="fancy">
+	
 	<div ng-controller="AccordionDemoCtrl">
-	  <p>
-		<button class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>
-		<button class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
-	  </p>
-
-	  <label class="checkbox">
-		<input type="checkbox" ng-model="oneAtATime">
-		Open only one at a time
-	  </label>
+	
+	<div>`
+	  
 	  <accordion close-others="oneAtATime">
-		<accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
-		  This content is straight in the template.
+		<accordion-group heading="{{sample.title}}" ng-repeat="sample in samples" ng-click="markRead()">
+		  <div ng-repeat="paragraph in sample.contents">{{paragraph}}<br><br></div>
 		</accordion-group>
-		<accordion-group heading="{{group.title}}" ng-repeat="group in groups">
-		  {{group.content}}
-		</accordion-group>
+		<!--
 		<accordion-group heading="Dynamic Body Content">
 		  <p>The body of the accordion group grows to fit the contents</p>
 			<button class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
 			<div ng-repeat="item in items">{{item}}</div>
 		</accordion-group>
-		<accordion-group is-open="status.open">
-			<accordion-heading>
-				I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
-			</accordion-heading>
-			This is just some content to illustrate fancy headings.
-		</accordion-group>
+		-->
 	  </accordion>
+	  
+	</div>
+	
 	</div>
 
 
-
+</div>
 </body>
 </html>

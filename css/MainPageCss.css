@@ -1,23 +1,42 @@
-body
-	{
-		color:blue;
-	}
-	
-/*div{
-	border-color:blue;
-	border-bottom-width:1px;
-	border-style:solid;
-}	*/
+* {
+	font-family: Georgia, serif; 
+}
 
 .nav, .pagination, .carousel, .panel-title a { 
 	cursor: pointer; 
 	}
+	
+input.image		{
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;}
 	
 body {
     opacity: 1;
     -webkit-transition: opacity 1s ease;
     -moz-transition: opacity 1s ease;
     transition: opacity 1s;
+}
+
+.pagetitle {
+	text-align:center;
+	
+	font-size: 34px; 
+	line-height: 36px; 
+	font-weight: 400; 
+	color: #333333;
+}
+
+.subtitle {
+	text-align:center;
+	color:#9AD290;
+	font-style:italic;
+}
+
+.fancy {
+	width:25%;
 }
 
 .ng-cloak {
