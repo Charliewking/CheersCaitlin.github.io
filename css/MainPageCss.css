@@ -18,6 +18,9 @@ input.image		{
 	-moz-border-radius: 100px;
 	}
 	
+.interests {
+	text-align:center;
+}
 body {
     opacity: 1;
     -webkit-transition: opacity 1s ease;
