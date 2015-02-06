@@ -4,6 +4,19 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
   .controller('AccordionDemoCtrl', ['$scope', function ($scope) {
   $scope.oneAtATime = true;
 
+	$scope.Red		= "#DB3340"
+	$scope.Yellow	= "#E8B71A"
+	$scope.Cream	= "#F7EAC8"
+	$scope.Green	= "#1FDA9A"
+	$scope.Blue		= "#28ABE3"
+	
+	var Red 	= '#DB3340'
+	var Yellow	= '#E8B71A'
+	var Cream	= '#F7EAC8'
+	var Green	= '#1FDA9A'
+	var Blue	= '#28ABE3'
+  
+  
   $scope.samples = [
     {
       title: 'Musings Over Cats and Their Reaction to Cuddles',
@@ -36,7 +49,7 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
 		linktitle: 'Button stuff',
 		linkURL: '',
 		image: 'images/american.jpg',
-		color: '#FFFFB0'
+		color: '#28ABE3'
 	},
 	{
 		title: 'I\'m really cute',
@@ -44,15 +57,15 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
 		linktitle: 'click the button',
 		linkURL: '',
 		image: 'images/caitlin2.jpg',
-		color: '#85CA5D'
+		color: '#28ABE3'
 	},
 	{
 		title: 'You are watching a show',
 		content: 'sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices',
-		linktitle: 'super long button title to see what that looks like',
+		linktitle: 'super long button title',
 		linkURL: '',
 		image: 'images/caitlin3.jpg',
-		color: '#6FB7D6'
+		color: '#28ABE3'
 	}
   ];
   
@@ -64,10 +77,47 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
     var newItemNo = $scope.items.length + 1;
     $scope.items.push('Item ' + newItemNo);
   };
-
-  $scope.markRead = function() {
-     
-  };
+  
+  $scope.contacts = [
+	{
+		medium: 'phone',
+		content: '(614)2824350',
+		message: 'Mobile',
+		color: '#DB3340'
+	},
+	{
+		medium: 'email',
+		content: 'mailto:caitlin.langfitt@gmail.com',
+		message: 'send me an email!',
+		color: '#DB3340'
+	},
+	{
+		medium: 'address',
+		content: '1717 12th Ave APT 306 Seattle, Wa 98122',
+		message: 'address',
+		color: '#DB3340'
+	}
+	];
+	$scope.contacts2 = [
+	{
+		medium: '4',
+		content: '(614)2824350',
+		message: 'Mobile',
+		color: '#DB3340'
+	},
+	{
+		medium: '5',
+		content: 'mailto:caitlin.langfitt@gmail.com',
+		message: 'send me an email!',
+		color: '#DB3340'
+	},
+	{
+		medium: '6',
+		content: '1717 12th Ave APT 306 Seattle, Wa 98122',
+		message: 'address',
+		color: '#DB3340'
+	}
+  ];
   
   }]);
   

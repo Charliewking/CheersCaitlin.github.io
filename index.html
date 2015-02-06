@@ -18,10 +18,10 @@
 	<link href="css/jumbotron-narrow.css" rel="stylesheet" />
 
 </head>
-<body ng-app="cheersCaitlin">
+<body ng-app="cheersCaitlin" ng-controller="AccordionDemoCtrl">
 <div class="container">
     <div class="jumbotron">
-		<input class="image" type="image" src="images/caitlin1.png">
+		<input class="image" type="image" src="images/mask.jpg">
 	</div>
 
 	<h1 class="pagetitle"> Caitlin Langfitt </h1>
@@ -31,20 +31,24 @@
 	
 	<h2 class="pagetitle">About Me</h2>
 	
+	<div class="row">
+	<div class="col-md-6 col-md-offset-3">
 	<p class="shortparagraph" >
 		I am by far the coolest ever. Everyone should try to be as cool as me.
 		It's always about me because I rock. I can't even think about anything else to write about.
 	</p>
+	</div>
+	</div>
 	
 	<hr class="fancy">
 	
 	<h2 class="pagetitle">Writing Samples</h2><br>
 	
-	<div ng-controller="AccordionDemoCtrl">
+	<div>
 	
 		<div>
 		  
-		  <accordion close-others="oneAtATime">
+		  <accordion close-others="oneAtATime" >
 			<accordion-group heading="{{sample.title}}" ng-repeat="sample in samples" ng-click="markRead()">
 			  <div ng-repeat="paragraph in sample.contents"><p>{{paragraph}}</p><br></div>
 			</accordion-group>
@@ -54,12 +58,12 @@
 	
 	</div>
 
-	<div class="container marketing" ng-controller="AccordionDemoCtrl">
+	<div class="container marketing" >
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-md-4 interests" ng-repeat="interest in interests" >
-          <input class="image" type="image" src="{{interest.image}}">
+          <input class="md-image" type="image" src="{{interest.image}}">
           <h3 class="subtitle">{{interest.title}}</h3>
           <p>{{interest.content}}</p>
           <p><a class="btn btn-default" style="background-color:{{interest.color}};"
@@ -72,17 +76,34 @@
 	
 	<h2 class="pagetitle">References</h2>
 	
-	<p class="shortparagraph" >
-		Those will go here
+	<p class="shortparagraph">
+		Those will go here 
 	</p>
 	
 	<hr class="fancy">
 	
 	<h2 class="pagetitle">Contacts</h2>
 	
-	<p class="shortparagraph" >
-		Those will go here
-	</p>
+	<div class="container marketing" >
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row" >
+        <div class="col-md-4 interests" ng-repeat="contact in contacts" >
+          <h3 class="pagetitle">{{contact.medium}}</h3>
+          <h4><a style="color:{{contact.color}};"
+					href="{{contact.content}}" role="button">{{contact.message}}</a></h4>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	  
+	  <div class="row" >
+        <div class="col-md-4 interests" ng-repeat="contact in contacts2" >
+          <h3 class="pagetitle">{{contact.medium}}</h3>
+          <h4><a style="color:{{contact.color}};"
+					href="{{contact.content}}" role="button">{{contact.message}}</a></h4>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	  
+	  </div>
 
 </div>
 </body>
