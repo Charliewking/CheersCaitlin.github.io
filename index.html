@@ -29,27 +29,43 @@
 	
 	<hr class="fancy">
 	
+	<h2 class="pagetitle">About Me</h2>
+	
+	<p class="shortparagraph" >
+		I am by far the coolest ever. Everyone should try to be as cool as me.
+		It's always about me because I rock. I can't even think about anything else to write about.
+	</p>
+	
+	<hr class="fancy">
+	
+	<h2 class="pagetitle">Writing Samples</h2><br>
+	
 	<div ng-controller="AccordionDemoCtrl">
 	
-	<div>`
-	  
-	  <accordion close-others="oneAtATime">
-		<accordion-group heading="{{sample.title}}" ng-repeat="sample in samples" ng-click="markRead()">
-		  <div ng-repeat="paragraph in sample.contents">{{paragraph}}<br><br></div>
-		</accordion-group>
-		<!--
-		<accordion-group heading="Dynamic Body Content">
-		  <p>The body of the accordion group grows to fit the contents</p>
-			<button class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
-			<div ng-repeat="item in items">{{item}}</div>
-		</accordion-group>
-		-->
-	  </accordion>
-	  
-	</div>
+		<div>
+		  
+		  <accordion close-others="oneAtATime">
+			<accordion-group heading="{{sample.title}}" ng-repeat="sample in samples" ng-click="markRead()">
+			  <div ng-repeat="paragraph in sample.contents"><p>{{paragraph}}</p><br></div>
+			</accordion-group>
+		  </accordion>
+		  
+		</div>
 	
 	</div>
 
+	<div class="container marketing" ng-controller="AccordionDemoCtrl">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-md-4" ng-repeat="interest in interests">
+          <input class="image" type="image" src="{{interest.image}}">
+          <h3 class="subtitle">{{interest.title}}</h3>
+          <p>{{interest.content}}</p>
+          <p><a class="btn btn-default" href="{{interest.linkURL}}" role="button">{{interest.linktitle}} &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	</div>
 
 </div>
 </body>

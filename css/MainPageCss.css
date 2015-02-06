@@ -2,16 +2,21 @@
 	font-family: Georgia, serif; 
 }
 
+p {
+	color:#999999;
+}
+
 .nav, .pagination, .carousel, .panel-title a { 
 	cursor: pointer; 
 	}
 	
 input.image		{
-			width: 200px;
-			height: 200px;
-			border-radius: 100px;
-			-webkit-border-radius: 100px;
-			-moz-border-radius: 100px;}
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	}
 	
 body {
     opacity: 1;
@@ -22,9 +27,6 @@ body {
 
 .pagetitle {
 	text-align:center;
-	
-	font-size: 34px; 
-	line-height: 36px; 
 	font-weight: 400; 
 	color: #333333;
 }
@@ -33,6 +35,10 @@ body {
 	text-align:center;
 	color:#9AD290;
 	font-style:italic;
+}
+
+.shortparagraph {
+	text-align:center;
 }
 
 .fancy {

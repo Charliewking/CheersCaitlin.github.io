@@ -27,6 +27,30 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
     }
   ];
   
+  $scope.interests = [
+	{
+		title: 'American University',
+		content: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. ',
+		linktitle: 'Button stuff',
+		linkURL: '',
+		image: 'images/american.jpg'
+	},
+	{
+		title: 'I\'m really cute',
+		content: 'Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor',
+		linktitle: 'click the button',
+		linkURL: '',
+		image: 'images/caitlin2.jpg'
+	},
+	{
+		title: 'You are watching a show',
+		content: 'sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices',
+		linktitle: 'super long button title to see what that looks like',
+		linkURL: '',
+		image: 'images/caitlin3.jpg'
+	}
+  ];
+  
   //var samples = sampleSvc.getSamples();
 
   $scope.items = ['Item 1', 'Item 2', 'Item 3'];
