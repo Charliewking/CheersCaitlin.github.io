@@ -83,41 +83,24 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
 		medium: 'phone',
 		content: '(614)2824350',
 		message: 'Mobile',
-		color: '#DB3340'
+		color: '#DB3340',
+		image: 'images/call.png'
 	},
 	{
 		medium: 'email',
 		content: 'mailto:caitlin.langfitt@gmail.com',
 		message: 'send me an email!',
-		color: '#DB3340'
+		color: '#DB3340',
+		image: 'images/email.png'
 	},
 	{
 		medium: 'address',
 		content: '1717 12th Ave APT 306 Seattle, Wa 98122',
 		message: 'address',
-		color: '#DB3340'
+		color: '#DB3340',
+		image: 'images/location.png'
 	}
 	];
-	$scope.contacts2 = [
-	{
-		medium: '4',
-		content: '(614)2824350',
-		message: 'Mobile',
-		color: '#DB3340'
-	},
-	{
-		medium: '5',
-		content: 'mailto:caitlin.langfitt@gmail.com',
-		message: 'send me an email!',
-		color: '#DB3340'
-	},
-	{
-		medium: '6',
-		content: '1717 12th Ave APT 306 Seattle, Wa 98122',
-		message: 'address',
-		color: '#DB3340'
-	}
-  ];
   
   }]);
   

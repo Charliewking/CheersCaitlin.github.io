@@ -30,6 +30,14 @@ input.md-image		{
 	-moz-border-radius: 60px;
 	}
 	
+input.sm-image		{
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	}
+	
 .interests {
 	text-align:center;
 }

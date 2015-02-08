@@ -42,21 +42,6 @@
 	
 	<hr class="fancy">
 	
-	<h2 class="pagetitle">Writing Samples</h2><br>
-	
-	<div>
-	
-		<div>
-		  
-		  <accordion close-others="oneAtATime" >
-			<accordion-group heading="{{sample.title}}" ng-repeat="sample in samples" ng-click="markRead()">
-			  <div ng-repeat="paragraph in sample.contents"><p>{{paragraph}}</p><br></div>
-			</accordion-group>
-		  </accordion>
-		  
-		</div>
-	
-	</div>
 
 	<div class="container marketing" >
 
@@ -73,6 +58,18 @@
 	</div>
 	
 	<hr class="fancy">
+	<h2 class="pagetitle">Writing Samples</h2><br>
+	
+	<div>
+		<div>
+		  <accordion close-others="oneAtATime" >
+			<accordion-group heading="{{sample.title}}" ng-repeat="sample in samples" ng-click="markRead()">
+			  <div ng-repeat="paragraph in sample.contents"><p>{{paragraph}}</p><br></div>
+			</accordion-group>
+		  </accordion>
+		</div>
+	</div>
+
 	
 	<h2 class="pagetitle">References</h2>
 	
@@ -80,26 +77,19 @@
 		Those will go here 
 	</p>
 	
+	
+	<!--  Contacts Section  -->
 	<hr class="fancy">
-	
 	<h2 class="pagetitle">Contacts</h2>
-	
 	<div class="container marketing" >
 
       <!-- Three columns of text below the carousel -->
       <div class="row" >
         <div class="col-md-4 interests" ng-repeat="contact in contacts" >
-          <h3 class="pagetitle">{{contact.medium}}</h3>
-          <h4><a style="color:{{contact.color}};"
-					href="{{contact.content}}" role="button">{{contact.message}}</a></h4>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-	  
-	  <div class="row" >
-        <div class="col-md-4 interests" ng-repeat="contact in contacts2" >
-          <h3 class="pagetitle">{{contact.medium}}</h3>
-          <h4><a style="color:{{contact.color}};"
-					href="{{contact.content}}" role="button">{{contact.message}}</a></h4>
+			
+			<a style="color:{{contact.color}};" href="{{contact.content}}" role="button">
+				<input class="sm-image" type="image" src="{{contact.image}}">
+			</a>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 	  
