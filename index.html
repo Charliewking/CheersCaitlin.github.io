@@ -34,8 +34,20 @@
 
 	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
-		<div class="modal-content" style="padding:10px;">
-			<iframe src="files/resume.pdf"></iframe>
+		<div class="modal-content" style="padding:10px;height:80%;width:80%;">
+			
+			<h1 class="resume" >Caitlin Amanda Langfitt</h1>
+			<p class="resume" >Caitlin.Langfitt@gmail.com</p>
+			
+			<div ng-repeat="category in categories">
+				<h1>{{category.title}}</h1>
+					<span>{{category.subtitle}}</span>
+					<div ng-repeat="line in category.lines">
+						<span>{{line}}</span>
+					</div>
+			</div>
+			
+			<a href="files/resume.pdf"><h3 class="pagetitle">Download My Resume</h3></a>
 		</div>
 	  </div>
 	</div>
@@ -51,6 +63,7 @@
 		I am by far the coolest ever. Everyone should try to be as cool as me.
 		It's always about me because I rock. I can't even think about anything else to write about.
 	</p>
+	<a href="files/resume.pdf"><h3 class="pagetitle">View My Resume</h3></a>
 	</div>
 	</div>
 	

@@ -102,6 +102,18 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
 	}
 	];
   
+  $scope.categories = [
+	{
+		title: 'research assistant',
+		subtitle: 'worked there for 6 months',
+		lines: [
+			'made copies',
+			'did other cool things',
+			'was excellent at being really awesome'
+		]
+	}
+	];
+  
   }]);
   
 })(window.angular);
