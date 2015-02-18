@@ -15,9 +15,22 @@ p {
 	background-color:#E8B71A !important;
 }
 
-div.resume	{
-	text-color:blue;
+.resume	{
+	text-decoration:none;
 }
+
+li.resume {
+	color:#777777;
+	line-height: 1.25;
+}
+
+h3.resume{
+	
+}
+
+h5.resume {
+	color:#777777;
+}	
 	
 input.image		{
 	width: 200px;
@@ -572,6 +585,18 @@ pre .regexp {
             margin: 0in;
             margin-bottom: .0001pt;
             font-size: 7.5pt;
+            font-family: "Cambria",serif;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: .5pt;
+            font-weight: normal;
+        }
+		
+		h5 {
+            mso-style-link: "Heading 5 Char";
+            margin: 0in;
+            margin-bottom: .0001pt;
+            font-size: 6pt;
             font-family: "Cambria",serif;
             color: black;
             text-transform: uppercase;

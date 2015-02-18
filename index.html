@@ -44,22 +44,23 @@
 	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 		<div class="modal-content" style="padding:20px;">
-			
 			<a style="float:right;text-decoration:none;" data-toggle="modal" data-target=".bs-example-modal-lg">
-				<input class="tiny-image" type="image" src="images/x.jpg">
-			</a>
-			<h1 class="resume" >Caitlin Amanda Langfitt</h1>
-			<p class="resume" >Caitlin.Langfitt@gmail.com</p>
-			
+				<input class="tiny-image" type="image" src="images/x.jpg"></a>
 			<div ng-repeat="category in categories" class="resume">
-				<h1>{{category.title}}</h1>
-					<span>{{category.subtitle}}</span>
-					<div ng-repeat="line in category.lines">
-						<span>{{line}}</span>
+				<h3 class="resume">{{category.category}}</h3>
+				<div ng-repeat="item in category.items">
+					<div class="row">
+						<div class="col-md-4"><h5>{{item.title}}</h5></div>
+						<div class="col-md-4"><h5 class="resume" >{{item.location}}</h5></div>
+						<div class="col-md-4"><h5 class="resume" >{{item.daterange}}</h5></div>
 					</div>
+					<ul ng-repeat="line in item.lines">
+						<li class="resume">{{line}}</li>
+					</ul>
+				</div>
 			</div>
 			
-			<a href="files/resume.pdf"><h3 class="pagetitle">Download My Resume</h3></a>
+			<a href="files/resume.pdf"><h4 class="pagetitle">Download Resume</h4></a>
 		</div>
 	  </div>
 	</div>

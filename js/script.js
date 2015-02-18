@@ -103,17 +103,62 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
 	];
   
   $scope.categories = [
-	{
-		title: 'research assistant',
-		subtitle: 'worked there for 6 months',
-		lines: [
-			'made copies',
-			'did other cool things',
-			'was excellent at being really awesome'
-		]
-	}
+		{ category: 'Education', items: [
+			{ title: 'B.A., Communications, Law, Economics, and Government',
+				institution: 'American University',
+				location: 'Washington, DC',
+				daterange: 'Sep 2008 - Jan 2012',
+				lines: [
+					'Successfully graduated in 3.5 years while working full time',
+					'did other cool things',
+					'was excellent at being really awesome'
+				]
+			}
+		]},
+		{ category: 'Skills & Abilities', items: [
+			{ title: '',
+				institution: '',
+				location: '',
+				daterange: '',
+				lines: [
+					'Strong research skills. Adept at electronic research and interviews',
+					'Organized and conscientious. Deadline-driven, does what it takes to complete task or assignment',
+					'Strong background in business productivity software – Word, Excel, PowerPoint, SharePoint, Outlook Meeting Planner, Visio, Project',
+					'Experienced in social networking media and blog design'
+				]
+			}
+		]},
+		{ category: 'Experience', items: [
+			{ title: 'Content and Audience Development Specialist',
+				institution: 'Bulletproof Executive',
+				location: 'Seattle, WA',
+				daterange: 'Nov 2014 - Present',
+				lines: [
+					'Ghost write articles for publication on media sites, including Huffington Post',
+					'Manage outreach to media and blog outlets in order to grow and develop the audience of Bulletproof Executive',
+					'Perform weekly site audits using Google analytics in order to develop the most effective editorial schedule'
+				]
+			},
+			{ title: 'Sales Representative',
+				institution: 'EasyDraft',
+				location: 'Charlotte, NC',
+				daterange: 'Feb 2014 – Oct 2014',
+				lines: [
+					'Maintained customer relations for a payment processing company'
+				]
+			},
+			{ title: 'Office Manager',
+				institution: 'Tresata',
+				location: 'Charlotte, NC',
+				daterange: 'Oct 2013 – Jan 2014',
+				lines: [
+					'Maintained office efficiency by planning and implementing office systems, such as Fixed Assists Tracking and Equipment Procurement',
+					'Designed and implemented office policies by establishing standards and procedures'
+				]
+			}
+		]}
 	];
-  
+
   }]);
   
 })(window.angular);
