@@ -1,5 +1,6 @@
 * {
 	font-family: Georgia, serif; 
+	decoration:none;
 }
 
 p {
@@ -12,6 +13,10 @@ p {
 	
 .panel-heading{
 	background-color:#E8B71A !important;
+}
+
+div.resume	{
+	text-color:blue;
 }
 	
 input.image		{
@@ -36,6 +41,14 @@ input.sm-image		{
 	border-radius: 40px;
 	-webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
+	}
+	
+input.tiny-image		{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
 	}
 	
 .interests {

@@ -95,10 +95,10 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
 	},
 	{
 		medium: 'address',
-		content: '1717 12th Ave APT 306 Seattle, Wa 98122',
+		content: 'http://www.linkedin.com/pub/caitlin-langfitt/40/991/594',
 		message: 'address',
 		color: '#DB3340',
-		image: 'images/location.png'
+		image: 'images/linkedin.png'
 	}
 	];
   
