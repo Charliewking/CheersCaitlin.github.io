@@ -155,6 +155,63 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
 					'Maintained office efficiency by planning and implementing office systems, such as Fixed Assists Tracking and Equipment Procurement',
 					'Designed and implemented office policies by establishing standards and procedures'
 				]
+			},
+			{ title: 'Stylist',
+				institution: 'Madewell',
+				location: 'New York City, NY',
+				daterange: 'Jan 2013 – Sep 2013',
+				lines: [
+					'Assisted customers, organized stock rooms, and staffed the register',
+					'Continually met sales goals in order to maintain commission based job'
+				]
+			},
+			{ title: 'Project Coordinator',
+				institution: 'Lockheed Martin',
+				location: 'Washington, DC',
+				daterange: 'Jan 2012 – Dec 2012',
+				lines: [
+					'Managed critical tracking updates via MS Excel to report back to senior leadership at the Department of the Navy',
+					'Organized monthly conferences for the Office of the Assistant Secretary to the Navy',
+					'Helped create business process flows to show how multiple systems interacted within one business process for SaaS e-commerce site for United States Mint',
+					'Facilitated meetings using MS Meeting Planner and SharePoint'
+				]
+			},
+			{ title: 'Research Associate',
+				institution: 'Federal Energy Regulatory Commission',
+				location: 'Washington, DC',
+				daterange: 'June 2011 – Dec 2011',
+				lines: [
+					'Part of Administrative Support staff for the five Commissioners',
+					'Researched environmental regulations and created summarized reports for commission review',
+					'Generated weekly reports tracking progress on assigned projects'
+				]
+			},
+			{ title: 'Research and Production Intern',
+				institution: 'NPR station WAMU 88.5, Kojo Nnamdi Show',
+				location: 'Washington, DC',
+				daterange: 'June 2011 – Dec 2011',
+				lines: [
+					'Helped create two hour live program highlighting current news, political issues, and social trends',
+					'Researched show topic, coordinated interviews and wrote scripts for host to use on-air'
+				]
+			},
+			{ title: 'Sales Associate',
+				institution: 'Bethesda Row Cinemas',
+				location: 'Washington, DC',
+				daterange: 'Sept 2009 – Sept 2011',
+				lines: [
+					'Assisted customers, merchandised film products, staffed register with up to $5000 in nightly receipts',
+					'Employee of the Month for November 2009, August 2010, March 2011'
+				]
+			},
+			{ title: 'Research and Publications Intern',
+				institution: 'Environmental Law Institute',
+				location: 'Washington, DC',
+				daterange: 'Sept 2009 – Dec 2009',
+				lines: [
+					'Conducted library and internet research, attended and reported on outside events for publication in policy journal',
+					'Reviewed, edited and summarized scholarly material to be used in published reports'
+				]
 			}
 		]}
 	];
