@@ -21,6 +21,7 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
     {
       title: 'Musings Over Cats and Their Reaction to Cuddles',
 	  color: '#6FB7D6',
+	  image: 'images/caitlin2.jpg',
       contents: [
 	  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
 	  "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. ","Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.",
@@ -31,6 +32,7 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
     {
       title: 'Where Oh Where Could My Baby Be?',
 	  color: '#6FB717',
+	  image: 'images/caitlin3.jpg',
       contents: [
 	  'Medical marijuana has been legal in Colorado since 2001, and recreational marijuana use became legal a year ago. But marijuana businesses have had limited, if any, access to banking services. The federal government considers marijuana illegal and so traditional banks, fearing prosecution for aiding and abetting illegal drug dealers, have shut down pot-business accounts and declined to give loans. Some banks have ferreted out pot entrepreneurs by sniffing their bills, leading to a countermove: bills sprayed with air freshener.',
 	  'Without a bank account, pot businesses deal in cash, lots of it, held in safes, handed out in clipped bundles on payday, carried in brown paper bags and cardboard boxes to the tax office and the utility company, ferried around the state by armored vehicles and armed guards. And without access to essential banking services — from credit cards to electronic transfers to loans — those businesses pay a huge premium. The reality in Colorado is that it is legal to grow pot but extremely hard to grow a pot business.',
@@ -47,7 +49,7 @@ angular.module('cheersCaitlin', ['ui.bootstrap'])
 		title: 'American University',
 		content: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. ',
 		linktitle: 'Button stuff',
-		linkURL: '',
+		linkURL: 'http://american.edu',
 		image: 'images/american.jpg',
 		color: '#28ABE3'
 	},

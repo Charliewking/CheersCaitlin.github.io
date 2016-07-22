@@ -9,8 +9,8 @@
 	<!-- Scripts to be included -->
     <script src="js/angular.js"></script>
     <script src="js/script.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
-	<script src="js/ui-bootstrap-custom-0.12.0.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.js"></script>
+	<!--<script src="js/ui-bootstrap-custom-0.12.0.js"></script>-->
 	<script src="js/ui-bootstrap-custom-tpls-0.12.0.js"></script>
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -83,37 +83,6 @@
       </div><!-- /.row -->
 	</div>
 	
-	<!--                              new stuff               -->
-	<hr class="fancy">
-
-	<div class="container marketing" >
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-md-4 interests" ng-repeat="sample in samples" >
-          <input class="md-image" type="image" src="{{sample.image}}">
-          <a data-toggle="modal" data-target=".{{sample.number}}-modal-lg" href=""><h3 class="subtitle">{{sample.title}}</h3></a>
-          
-	<div class="modal fade {{sample.number}}-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg">
-		<div class="modal-content" style="padding:5%">
-			<a style="float:right;" data-toggle="modal" data-target=".{{sample.number}}-modal-lg">
-				<input class="tiny-image" type="image" src="images/x.jpg"></a>
-			<div>
-				<div ng-repeat="paragraph in sample.contents"><p>{{paragraph}}</p><br></div>
-			</div>
-		</div>
-	  </div>
-	</div>
-		  
-		  
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-	</div>
-	
-<!--                              new stuff               -->
-
-	
 	<hr class="fancy">
 	<h2 class="pagetitle">Writing Samples</h2><br>
 	
@@ -148,6 +117,12 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 	 </div>
+	 
+	 <div class="form-group has-feedback">
+    <label class="control-label">Username</label>
+    <input type="text" class="form-control" placeholder="Username" />
+    <i class="glyphicon glyphicon-user form-control-feedback"></i>
+</div>
 
 </div>
 </body>

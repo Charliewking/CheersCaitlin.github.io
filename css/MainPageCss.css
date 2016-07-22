@@ -1,6 +1,13 @@
 * {
 	font-family: Georgia, serif; 
-	decoration:none;
+}
+
+a {
+	text-decoration:none !important;
+}
+
+a:hover {
+	text-decoration:underline !important;
 }
 
 p {
